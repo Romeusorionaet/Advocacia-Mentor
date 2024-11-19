@@ -1,6 +1,7 @@
 import { Countdown } from '@/components/count-down'
 import '../assets/styles/sticky.css'
 import Image from 'next/image'
+import { ArrowDown, ArrowRight } from 'lucide-react'
 
 export default function Home() {
   const faqItems = [
@@ -442,7 +443,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mx-auto mt-10 space-y-4 md:max-w-4xl">
+        <div className="mx-auto mt-10 space-y-4 px-1 md:max-w-4xl">
           {faqItems.map((item, index) => (
             <details
               key={index}
@@ -455,6 +456,79 @@ export default function Home() {
             </details>
           ))}
         </div>
+
+        <div className="mt-16 flex flex-wrap justify-center gap-16 md:justify-around">
+          <div className="text-center">
+            <h3 className="text-xl font-extrabold">Ficou alguma dúvida?</h3>
+            <div>
+              <p className="uppercase">Me chame agora mesmo no</p>
+              <button className="rounded-md bg-green-600 p-2 text-white duration-500 hover:bg-green-500">
+                WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <button className="animate-pulse rounded-md bg-white p-4 uppercase text-black duration-500 hover:animate-none hover:bg-green-600 hover:text-white">
+              quero minha vaga agora
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-wrap justify-center gap-16 bg-white px-2 py-12 text-black">
+        <div className="lg:w-1/2">
+          <h2 className="text-4xl font-thin max-md:text-center md:text-7xl">
+            Você está no caminho certo
+          </h2>
+          <div className="flex items-center max-md:flex-col">
+            <p className="text-xl max-md:text-center">
+              A um passo para o sucesso!
+            </p>
+            <ArrowRight size={56} className="max-lg:hidden" />
+            <ArrowDown size={56} className="lg:hidden" />
+          </div>
+        </div>
+
+        <div>
+          <form className="flex flex-col gap-6">
+            <label className="block">
+              Nome completo
+              <input
+                className="w-full border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
+                type="text"
+              />
+            </label>
+            <label className="block">
+              Email
+              <input
+                className="w-full border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
+                type="text"
+              />
+            </label>
+            <label className="block">
+              Telefone
+              <input
+                className="w-full border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
+                type="number"
+              />
+            </label>
+
+            <label className="block">
+              Mensagem <span className="opacity-50">(Opacional)</span>
+              <textarea className="mt-4 h-44 w-full resize-none border border-black/20 p-2 focus:border-black focus:outline-none focus:ring-0"></textarea>
+            </label>
+
+            <button className="rounded-md bg-white p-4 uppercase text-black duration-500 hover:bg-green-600 hover:text-white">
+              enviar
+            </button>
+          </form>
+        </div>
+
+        <p>
+          Preencha seus dados e prepare-se para transformar sua carreira —
+          entraremos em contato rapidamente!
+        </p>
       </section>
     </main>
   )
