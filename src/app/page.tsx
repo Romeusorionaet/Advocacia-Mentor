@@ -60,8 +60,9 @@ export default function Home() {
   return (
     <main>
       <section className="relative flex h-screen w-full flex-col justify-between bg-[url('/img/networking-business.jpeg')] bg-cover bg-center bg-no-repeat p-2 md:p-4">
-        <h1 className="mt-32 text-4xl font-extrabold text-black md:text-7xl">
-          BOUTIQUE TRAVEL AGENCY DISCOVER UNIQUE TRAVEL EXPERIENCES WITH VOYAGER
+        <h1 className="mt-32 text-4xl font-extrabold uppercase text-black md:text-7xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          veritatis eligendi quidem.
         </h1>
 
         <div className="mt-20 flex flex-col gap-10 rounded-md bg-black/40 px-4 py-6 md:w-1/2 xl:w-2/5">
@@ -75,8 +76,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mx-auto w-full max-w-5xl space-y-4 px-2 pb-16">
-        <h2 className="my-20 text-center text-4xl font-thin md:text-7xl">
+      <section className="relative mx-auto w-full max-w-5xl space-y-4 px-2 py-16">
+        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[url('/img/bg-1.jpg')] bg-cover bg-center bg-no-repeat blur-lg" />
+        <h2 className="mb-20 text-center text-4xl font-thin md:text-7xl">
           porque que nos escolher?
         </h2>
 
@@ -321,7 +323,8 @@ export default function Home() {
         <div className="-mb-48 h-screen w-full bg-[url('/img/networking.jpeg')] bg-center bg-no-repeat" />
       </section>
 
-      <section className="flex flex-col pt-28">
+      <section className="relative flex flex-col pt-28">
+        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[url('/img/bg-2.jpg')] bg-cover bg-center bg-no-repeat blur-md" />
         <h2 className="mb-20 text-center text-4xl font-thin md:text-7xl">
           Quem Está Por Trás da Nossa Mentoria
         </h2>
@@ -395,7 +398,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-20 p-2 md:p-4">
+      <section className="relative mb-20 p-2 md:p-4">
+        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[url('/img/bg-1.jpg')] bg-cover bg-center bg-no-repeat blur-md" />
+
         <h2 className="text-center text-2xl font-bold md:text-3xl">
           O que você terá na Mentoria/Comunidade{' '}
           <span className="uppercase">advocacia-mentor</span>?
@@ -473,7 +478,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-wrap justify-center gap-16 bg-white px-2 py-12 text-black">
+      <section className="relative flex flex-wrap justify-center gap-16 bg-[url('/img/man-run.png')] bg-left bg-no-repeat px-2 py-12 text-black md:bg-bottom">
+        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-white blur-sm md:blur-xl" />
         <div className="lg:w-1/2">
           <h2 className="text-4xl font-thin max-md:text-center md:text-7xl">
             Você está no caminho certo
@@ -482,7 +488,10 @@ export default function Home() {
             <p className="text-xl max-md:text-center">
               A um passo para o sucesso!
             </p>
-            <ArrowRight size={56} className="max-lg:hidden" />
+            <ArrowRight
+              size={56}
+              className="rounded-full bg-white max-lg:hidden"
+            />
             <ArrowDown size={56} className="lg:hidden" />
           </div>
         </div>
@@ -492,21 +501,21 @@ export default function Home() {
             <label className="block">
               Nome completo
               <input
-                className="w-full border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
+                className="w-full rounded-md border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
                 type="text"
               />
             </label>
             <label className="block">
               Email
               <input
-                className="w-full border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
+                className="w-full rounded-md border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
                 type="text"
               />
             </label>
             <label className="block">
               Telefone
               <input
-                className="w-full border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
+                className="w-full rounded-md border-b border-black/20 focus:border-black focus:outline-none focus:ring-0"
                 type="number"
               />
             </label>
@@ -516,7 +525,7 @@ export default function Home() {
               <textarea className="mt-4 h-44 w-full resize-none border border-black/20 p-2 focus:border-black focus:outline-none focus:ring-0"></textarea>
             </label>
 
-            <button className="rounded-md bg-white p-4 uppercase text-black duration-500 hover:bg-green-600 hover:text-white">
+            <button className="rounded-md bg-green-600 p-4 uppercase text-white duration-500 md:bg-white md:text-black md:hover:bg-green-600 md:hover:text-white">
               enviar
             </button>
           </form>
