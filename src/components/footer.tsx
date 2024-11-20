@@ -18,7 +18,7 @@ export function Footer() {
             height={500}
             src={`/social-media/${icon}`}
             alt={icon}
-            className="h-10 w-10 md:h-16 md:w-16"
+            className="h-10 w-10 hover:scale-105 hover:shadow-sm md:h-16 md:w-16"
           />
         ))}
       </div>

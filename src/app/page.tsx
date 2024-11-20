@@ -59,8 +59,9 @@ export default function Home() {
 
   return (
     <main>
-      <section className="relative flex h-screen w-full flex-col justify-between bg-[url('/img/networking-business.jpeg')] bg-cover bg-center bg-no-repeat p-2 md:p-4">
-        <h1 className="mt-32 text-4xl font-extrabold uppercase text-black md:text-7xl">
+      <section className="relative flex h-screen w-full flex-col justify-between bg-cyan-950/60 p-2 md:p-4">
+        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[url('/img/networking-business.jpeg')] bg-cover bg-center bg-no-repeat" />
+        <h1 className="mt-32 text-4xl font-extrabold uppercase text-shadow-xl md:text-7xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
           veritatis eligendi quidem.
         </h1>
@@ -192,7 +193,7 @@ export default function Home() {
 
       <section className="flex flex-col items-center justify-center bg-white pt-20 text-gray-800">
         <div className="py-10 text-gray-800">
-          <h2 className="text-center text-4xl font-thin md:text-7xl">
+          <h2 className="text-center text-4xl font-thin text-shadow-sm md:text-7xl">
             Estamos com{' '}
             <span className="font-extrabold text-orange-200">
               oferta especial
@@ -436,7 +437,7 @@ export default function Home() {
 
       <section className="bg-orange-200 py-12 text-black">
         <div className="flex flex-wrap items-center justify-center">
-          <h2 className="text-center text-4xl font-thin md:text-7xl">
+          <h2 className="text-center text-4xl font-thin text-shadow-lg md:text-7xl">
             Perguntas Frequentes
           </h2>
 
@@ -481,7 +482,7 @@ export default function Home() {
       <section className="relative flex flex-wrap justify-center gap-16 bg-[url('/img/man-run.png')] bg-left bg-no-repeat px-2 py-12 text-black md:bg-bottom">
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-white blur-sm md:blur-xl" />
         <div className="lg:w-1/2">
-          <h2 className="text-4xl font-thin max-md:text-center md:text-7xl">
+          <h2 className="text-4xl font-thin text-shadow-lg max-md:text-center md:text-7xl">
             Você está no caminho certo
           </h2>
           <div className="flex items-center max-md:flex-col">
