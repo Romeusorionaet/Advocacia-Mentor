@@ -522,7 +522,9 @@ export default function Home() {
             </label>
 
             <label className="block">
-              Mensagem <span className="opacity-50">(Opacional)</span>
+              <p className="roumd rounded-md bg-white p-1">
+                Mensagem <span className="opacity-50">(Opacional)</span>
+              </p>
               <textarea className="mt-4 h-44 w-full resize-none border border-black/20 p-2 focus:border-black focus:outline-none focus:ring-0"></textarea>
             </label>
 
@@ -536,6 +538,39 @@ export default function Home() {
           Preencha seus dados e prepare-se para transformar sua carreira —
           entraremos em contato rapidamente!
         </p>
+      </section>
+
+      <section className="bg-white px-2 py-12">
+        <h2 className="text-4xl font-thin text-black text-shadow-lg max-md:text-center md:text-7xl">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </h2>
+
+        <div className="mt-16 flex justify-center gap-2 max-md:flex-col max-md:items-center">
+          <div className="flex flex-col gap-2 md:w-1/2">
+            <div className="flex h-11.0/12 items-center justify-center rounded-lg bg-orange-300 p-2">
+              <p className="textxl text-shadow-md md:text-3xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore sed libero autem dolorum velit quod fugit laborum
+                veritatis eum qui voluptatum voluptate dolor hic, cumque odit,
+                eaque enim reiciendis totam.
+              </p>
+            </div>
+
+            <div className="flex h-14 items-center justify-center rounded-lg bg-black">
+              <p>dteg frerfgr</p>
+            </div>
+          </div>
+
+          <div className="mx-auto h-96 w-full md:h-40r md:w-3/6">
+            <Image
+              width={800}
+              height={800}
+              src="/img/man-on-step.jpeg"
+              alt="um homem de terno azul marinho no topo de um degrau em direção ao céu"
+              className="h-full w-full rounded-lg"
+            />
+          </div>
+        </div>
       </section>
     </main>
   )

@@ -23,7 +23,7 @@ export default {
         'gray-800': '#1f2937',
         'orange-100': '#ffedd5',
         'orange-200': '#fed7aa',
-        'orange-300': '##fdba74',
+        'orange-300': '#fdba74',
         'blue-100': '#dbeafe',
         'blue-500': '#3b82f6',
         'blue-800': '#1e40af',
@@ -40,6 +40,7 @@ export default {
       },
 
       height: {
+        '40r': '40rem',
         '50r': '50rem',
         '4.0/6': '60%',
         '11.0/12': '90%',
