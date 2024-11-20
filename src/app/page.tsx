@@ -58,13 +58,13 @@ export default function Home() {
   ]
 
   return (
-    <main className="">
+    <main>
       <section className="relative flex h-screen w-full flex-col justify-between bg-[url('/img/networking-business.jpeg')] bg-cover bg-center bg-no-repeat p-2 md:p-4">
         <h1 className="mt-32 text-4xl font-extrabold text-black md:text-7xl">
           BOUTIQUE TRAVEL AGENCY DISCOVER UNIQUE TRAVEL EXPERIENCES WITH VOYAGER
         </h1>
 
-        <div className="mt-20 flex flex-col gap-10 rounded-md bg-black/40 px-4 py-6 md:w-[50%] xl:w-[40%]">
+        <div className="mt-20 flex flex-col gap-10 rounded-md bg-black/40 px-4 py-6 md:w-1/2 xl:w-2/5">
           <p className="text-center font-extrabold">
             Estamos com bônus exclusivo para os primeiros 100 inscritos
           </p>
@@ -75,14 +75,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mx-auto w-full max-w-[1000px] space-y-4 px-2 pb-16">
+      <section className="relative mx-auto w-full max-w-5xl space-y-4 px-2 pb-16">
         <h2 className="my-20 text-center text-4xl font-thin md:text-7xl">
           porque que nos escolher?
         </h2>
 
         <div className="sticky-group">
           <div className="sticky-item h-44 w-full">
-            <div className="h-full w-[42%]">
+            <div className="h-full w-2.02/5">
               <Image
                 width={800}
                 height={800}
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
 
           <div className="sticky-item flex h-56 w-full justify-end gap-2">
-            <div className="h-full w-[42%]">
+            <div className="h-full w-2.02/5">
               <div className="rounded-lg bg-white">
                 <h3 className="rounded-lg text-center font-bold text-black  md:text-xl">
                   Especialização Comprovada
@@ -102,7 +102,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex w-[57%] justify-start">
+            <div className="flex w-1.07/2 justify-start">
               <p className="text-end max-md:text-justify max-md:text-xs md:text-start">
                 Contamos com uma equipe de especialistas com vasta experiência
                 no mercado jurídico, prontos para compartilhar estratégias que
@@ -118,7 +118,7 @@ export default function Home() {
 
         <div className="sticky-group">
           <div className="sticky-item flex w-full justify-end">
-            <div className="h-44 w-[42%]">
+            <div className="h-44 w-2.02/5">
               <Image
                 width={800}
                 height={800}
@@ -130,7 +130,7 @@ export default function Home() {
           </div>
 
           <div className="sticky-item flex h-56 w-full justify-end gap-2">
-            <div className="flex w-[57%] justify-start">
+            <div className="flex w-1.07/2 justify-start">
               <p className="text-end max-md:text-justify max-md:text-xs md:text-end">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Adipisci commodi accusantium assumenda beatae obcaecati nam
@@ -141,7 +141,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="h-full w-[42%]">
+            <div className="h-full w-2.02/5">
               <div className="rounded-lg bg-white">
                 <h3 className="rounded-lg text-center font-bold text-black md:text-xl">
                   Ferramentas Exclusivas
@@ -153,7 +153,7 @@ export default function Home() {
 
         <div className="sticky-group">
           <div className="sticky-item h-44 w-full">
-            <div className="h-full w-[42%]">
+            <div className="h-full w-2.02/5">
               <Image
                 width={800}
                 height={800}
@@ -165,15 +165,15 @@ export default function Home() {
           </div>
 
           <div className="sticky-item flex h-56 w-full justify-end gap-2">
-            <div className="h-full w-[42%]">
+            <div className="h-full w-2.02/5">
               <div className="rounded-lg bg-white">
-                <h3 className="rounded-lg text-center font-bold text-black  md:text-xl">
+                <h3 className="rounded-lg text-center font-bold text-black md:text-xl">
                   Resultados Comprovados
                 </h3>
               </div>
             </div>
 
-            <div className="flex w-[57%] justify-start">
+            <div className="flex w-1.07/2 justify-start">
               <p className="text-end max-md:text-justify max-md:text-xs md:text-start">
                 Contamos com uma equipe de especialistas com vasta experiência
                 no mercado jurídico, prontos para compartilhar estratégias que
@@ -200,7 +200,7 @@ export default function Home() {
           <p className="mt-10 text-center text-xl">confira!</p>
         </div>
 
-        <div className="w-[90%] max-w-4xl space-y-6 rounded-lg bg-white p-8 shadow-lg">
+        <div className="w-11/12 max-w-4xl space-y-6 rounded-lg bg-white p-8 shadow-lg">
           <h2 className="text-center text-2xl font-bold md:text-3xl">
             <span className="text-orange-300">Bônus exclusivo</span> para os{' '}
             <span className="border-b border-orange-300">
@@ -314,10 +314,7 @@ export default function Home() {
             92% das vagas preenchidas
           </p>
           <div className="h-4 w-full rounded-full bg-gray-200">
-            <div
-              className="h-4 rounded-full bg-green-500"
-              style={{ width: '92%' }}
-            ></div>
+            <div className="h-4 w-11/12 rounded-full bg-green-500" />
           </div>
         </div>
 
@@ -330,21 +327,21 @@ export default function Home() {
         </h2>
 
         <div className="flex flex-wrap justify-evenly md:gap-10">
-          <article className="mb-32 flex h-[50rem] w-80 flex-col items-center gap-2">
-            <header className="h-[60%] space-y-4 p-2">
+          <article className="mb-32 flex h-50r w-80 flex-col items-center gap-2">
+            <header className="h-4.0/6 space-y-4 p-2">
               <Image
                 width={800}
                 height={800}
                 src="/img/steve-carell.jpg"
                 alt="Steve Carell"
-                className="h-[90%] min-w-full rounded-lg"
+                className="h-11.0/12 min-w-full rounded-lg"
               />
               <h3 className="text-center text-4xl font-extrabold">
                 Steve Carell
               </h3>
             </header>
 
-            <div className="h-[30%] space-y-4">
+            <div className="h-1.0/3 space-y-4">
               <p>
                 <strong>Função</strong>: Especialista em desenvolvimento
                 profissional que ajuda os participantes a definir objetivos de
@@ -356,28 +353,28 @@ export default function Home() {
               </p>
             </div>
 
-            <footer className="mt-6 h-[10%]">
+            <footer className="mt-6 h-1.0/6">
               <button className="relative overflow-hidden rounded-lg bg-gradient-to-r from-transparent to-blue-500 bg-right p-4 hover:bg-[length:200%_100%]">
                 <span className="relative z-10 text-white">LinkedIn</span>
               </button>
             </footer>
           </article>
 
-          <article className="mb-32 flex h-[50rem] w-80 flex-col items-center gap-2">
-            <header className="h-[60%] space-y-4 p-2">
+          <article className="mb-32 flex h-50r w-80 flex-col items-center gap-2">
+            <header className="h-4.0/6 space-y-4 p-2">
               <Image
                 width={800}
                 height={800}
                 src="/img/jenna-fischer.jpg"
                 alt="Jenna fischer"
-                className="h-[90%] min-w-full rounded-lg"
+                className="h-11.0/12 min-w-full rounded-lg"
               />
               <h3 className="text-center text-4xl font-extrabold">
                 Jenna fischer
               </h3>
             </header>
 
-            <div className="h-[30%] space-y-4">
+            <div className="h-1.0/3 space-y-4">
               <p>
                 <strong>Função</strong>: Ensina os participantes a se
                 posicionarem nas redes sociais, criarem autoridade e atrair
@@ -389,7 +386,7 @@ export default function Home() {
               </p>
             </div>
 
-            <footer className="mt-6 h-[10%]">
+            <footer className="mt-6 h-1.0/6">
               <button className="relative overflow-hidden rounded-lg bg-gradient-to-r from-transparent to-blue-500 bg-right p-4 hover:bg-[length:200%_100%]">
                 <span className="relative z-10 text-white">LinkedIn</span>
               </button>
@@ -398,12 +395,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-20 p-2 md:p-4">
+      <section className="mb-20 p-2 md:p-4">
         <h2 className="text-center text-2xl font-bold md:text-3xl">
           O que você terá na Mentoria/Comunidade{' '}
           <span className="uppercase">advocacia-mentor</span>?
         </h2>
-        <div className="mx-auto mt-6 w-full rounded-lg bg-white/90 p-2 text-black lg:w-[60%]">
+        <div className="mx-auto mt-6 w-full rounded-lg bg-white/90 p-2 text-black lg:w-4.06/6">
           <ul className="space-y-4">
             <li className="rounded-lg border p-2 hover:border-black">
               <span className="font-bold uppercase">Networking avançado</span>:
