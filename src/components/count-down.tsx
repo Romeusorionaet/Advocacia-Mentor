@@ -2,11 +2,28 @@
 
 import { useState, useEffect } from 'react'
 
+type TimeLeft = {
+  days: number
+  hours: number
+  minutes: number
+  seconds: number
+}
+
 export function Countdown() {
   const calculateTimeLeft = () => {
-    const deadline = new Date('2024-12-01T23:59:59')
+    const deadline = new Date('2024-11-21T11:31:00')
     const now = new Date()
     const difference = deadline.getTime() - now.getTime()
+
+    if (difference <= 0) {
+      return {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      }
+    }
+
     return {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
@@ -15,15 +32,21 @@ export function Countdown() {
     }
   }
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>()
 
   useEffect(() => {
+    setTimeLeft(calculateTimeLeft())
+
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft())
     }, 1000)
 
     return () => clearInterval(timer)
   }, [])
+
+  if (!timeLeft) {
+    return <p className="mt-16 text-center">Carregando tempo...</p>
+  }
 
   return (
     <div className="rounded-lg bg-orange-100 p-4 text-center text-yellow-800 shadow-md">
