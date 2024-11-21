@@ -1,14 +1,17 @@
 import { FormDashboard } from '@/components/form-dashboard'
 import { ArrowDown, ArrowRight } from 'lucide-react'
 import { Countdown } from '@/components/count-down'
+import { faqItems } from '@/lib/data-faq'
 import '../assets/styles/sticky.css'
 import Image from 'next/image'
-import { faqItems } from '@/lib/data-faq'
 
 export default function Home() {
   return (
     <main>
-      <section className="relative flex h-screen w-full flex-col justify-between bg-cyan-950/60 p-2 md:p-4">
+      <section
+        id="topPage"
+        className="relative flex h-screen w-full flex-col justify-between bg-cyan-950/60 p-2 md:p-4"
+      >
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[url('/img/networking-business.jpeg')] bg-cover bg-center bg-no-repeat" />
         <h1 className="mt-32 text-4xl font-extrabold uppercase text-shadow-xl md:text-7xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -26,7 +29,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mx-auto w-full max-w-5xl space-y-4 px-2 py-16">
+      <section
+        id="about"
+        className="relative mx-auto w-full max-w-5xl space-y-4 px-2 py-16"
+      >
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[url('/img/bg-1.jpg')] bg-cover bg-center bg-no-repeat blur-lg" />
         <h2 className="mb-20 text-center text-4xl font-thin md:text-7xl">
           porque que nos escolher?
@@ -140,7 +146,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-center bg-white pt-20 text-gray-800">
+      <section
+        id="bid"
+        className="flex flex-col items-center justify-center bg-white pt-20 text-gray-800"
+      >
         <div className="py-10 text-gray-800">
           <h2 className="text-center text-4xl font-thin text-shadow-sm md:text-7xl">
             Estamos com{' '}
@@ -273,7 +282,7 @@ export default function Home() {
         <div className="-mb-48 h-screen w-full bg-[url('/img/networking.jpeg')] bg-center bg-no-repeat" />
       </section>
 
-      <section className="relative flex flex-col pt-28">
+      <section id="mentors" className="relative flex flex-col pt-28">
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[url('/img/bg-2.jpg')] bg-cover bg-center bg-no-repeat blur-md" />
         <h2 className="mb-20 text-center text-4xl font-thin md:text-7xl">
           Quem Está Por Trás da Nossa Mentoria
@@ -384,7 +393,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-orange-200 py-12 text-black">
+      <section id="faq" className="bg-orange-200 py-12 text-black">
         <div className="flex flex-wrap items-center justify-center">
           <h2 className="text-center text-4xl font-thin text-shadow-lg md:text-7xl">
             Perguntas Frequentes
@@ -428,7 +437,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative flex flex-wrap justify-center gap-16 bg-[url('/img/man-run.png')] bg-left bg-no-repeat px-2 py-12 text-black md:bg-bottom">
+      <section
+        id="guaranteePlace"
+        className="relative flex flex-wrap justify-center gap-16 bg-[url('/img/man-run.png')] bg-left bg-no-repeat px-2 py-12 text-black md:bg-bottom"
+      >
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-white blur-sm md:blur-xl" />
         <div className="lg:w-1/2">
           <h2 className="text-4xl font-thin text-shadow-lg max-md:text-center md:text-7xl">
@@ -454,7 +466,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="bg-white px-2 py-12">
+      <section id="lorem" className="bg-white px-2 py-12">
         <h2 className="text-4xl font-thin text-black text-shadow-lg max-md:text-center md:text-7xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
