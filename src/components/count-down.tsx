@@ -11,7 +11,7 @@ type TimeLeft = {
 
 export function Countdown() {
   const calculateTimeLeft = () => {
-    const deadline = new Date('2024-11-21T11:31:00')
+    const deadline = new Date('2024-12-21T11:31:00')
     const now = new Date()
     const difference = deadline.getTime() - now.getTime()
 
